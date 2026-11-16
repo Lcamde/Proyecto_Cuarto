@@ -1,3 +1,4 @@
+
 // Analizar imágenes puede tardar mucho más que ordenar productos
 const TIMEOUT_MS = 30000;
 const MAX_LARGO_URL = 2000;
@@ -46,8 +47,8 @@ const analizar_prenda = async (req, res) => {
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
         backend_key: process.env.BACKEND_KEY,
-        img_main,
-        img_etiqueta
+        url_main: img_main,
+        url_etiqueta: img_etiqueta
       }),
       signal: AbortSignal.timeout(TIMEOUT_MS)
     });
