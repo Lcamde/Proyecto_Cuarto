@@ -1,3 +1,4 @@
+
 // Analizar imágenes puede tardar mucho más que ordenar productos
 const TIMEOUT_MS = 30000;
 const MAX_LARGO_URL = 2000;
