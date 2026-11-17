@@ -46,8 +46,8 @@ const analizar_prenda = async (req, res) => {
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
         backend_key: process.env.BACKEND_KEY,
-        img_main,
-        img_etiqueta
+        url_main: img_main,
+        url_etiqueta: img_etiqueta
       }),
       signal: AbortSignal.timeout(TIMEOUT_MS)
     });
